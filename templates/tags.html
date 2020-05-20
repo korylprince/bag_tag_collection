@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bag Tag List</title>
+        <meta name="description" content="Bag Tag List">
+        <meta name="author" content="Kory Prince">
+<style type="text/css">
+body {
+    font-size: 1.5em;
+}
+</style>
+    </head>
+    <body>
+        <a href="/">Back</a>
+        <div id="content">
+            {% for tag in tags %}
+            <a href="#" onclick="alert('Added at: {{ tag["time"] }}')">{{ tag["tag"] }}</a>
+            {% endfor %}
+        </div>
+    </body>
+</html>
