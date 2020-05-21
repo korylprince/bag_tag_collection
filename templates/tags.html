@@ -13,6 +13,7 @@ body {
     </head>
     <body>
         <a href="/">Back</a>
+        <span>{{ tags|length }} Bag Tags</span>
         <div id="content">
             {% for tag in tags %}
             <a href="#" onclick="alert('Added at: {{ tag["time"] }}')">{{ tag["tag"] }}</a>
